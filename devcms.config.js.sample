@@ -1,0 +1,49 @@
+module.exports = {
+  /**
+   * Base url of a DevCMS app
+   *
+   * without trailing slash
+   */
+  base_site_url: 'http://localhost:3000',
+
+  /**
+   * Base url of a DevCMS API
+   *
+   * without trailing slash
+   */
+  base_api_url: 'http://localhost:9000',
+
+  /**
+   * Base url of a DevCMS API
+   *
+   * without trailing slash
+   */
+  base_admin_url: 'http://localhost:3000',
+
+  /**
+   * DevCMS configuration
+   *
+   * used by @devcms/core
+   */
+  core: {
+    /**
+     * Secret key used to sign JWT
+     */
+    secret: '<xxxxxxxx>',
+
+    /**
+     * MongoDB connection string
+     */
+    database: '<mongo connection string>'
+  },
+
+  /**
+   * Server binding options
+   *
+   * used by @devcms/server
+   */
+  server: {
+    api: { host: 'localhost', port: 9000 },
+    admin: { host: 'localhost', port: 3001 }
+  }
+};
